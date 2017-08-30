@@ -1,0 +1,80 @@
+$ui-width: 750px;
+@function px2rem($px) {
+    @return $px/$ui-width*7.5rem;
+}
+*{
+	padding:0px;
+	margin:0px;
+}
+ul{
+	list-style:none;
+}
+#panda_index{
+	.panda_top{
+		height: px2rem(120px);
+		width: 100%;
+		background: linear-gradient(90deg,#0af,#0085ff);
+		overflow: hidden;
+		.search{
+			width: 90%;
+			margin:0 auto;
+			height: px2rem(30px);
+			background:#fff;
+			line-height: px2rem(30px);
+			text-align: center;
+			border-radius: px2rem(15px);
+			margin-top: px2rem(40px);
+			font-size: px2rem(14px);
+			color: #999;
+		}
+		.panda_bot{
+			margin-top:15px;
+			width: 100%;
+			ul{
+				width:100%;
+				overflow:auto;
+				white-space:nowrap;
+				text-align: center;
+				height: px2rem(40px);
+				color: #fff;
+				li{
+					display: inline-block;
+					min-width: 10%;
+					margin-right: 2%;
+				}
+			}
+		}
+	}
+	.panda{
+		height:px2rem(160px);
+		.swiper-pagination{
+			bottom: 0;
+		}
+		.swiper-slide{
+			ul{
+				text-align: center;
+				li{
+					width:25%;
+					float: left;
+					img{
+						width: 50%;
+					}
+				}
+			}
+		}
+	}
+	.fengexian{
+		height:px2rem(10px);
+		background:#eceeef;
+		width: 100%;
+	}
+	.panda_tuijian{
+		width: 100%;
+		font-size: px2rem(16px);
+		line-height: px2rem(40px);
+		height: px2rem(40px);
+		text-indent: 10px;
+		border-bottom:1px solid #ccc;
+	}
+	
+}

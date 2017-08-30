@@ -1,0 +1,112 @@
+$ui-width: 750px;
+@function px2rem($px) {
+    @return $px/$ui-width*7.5rem;
+}
+*{
+	padding:0;
+	margin:0;
+}
+html,body{
+	height:100%;
+}
+#box{
+	height:100%;
+}
+#app{
+	height:100%;
+}
+section{
+	height:100%;
+}
+#xy_logincode{
+	background-color:#f5f5f5;
+	height:100%;
+	header{
+		height:px2rem(44px);
+		background-color:#009cff;
+		position:relative;
+		text-align:center;
+		font-size:18px;
+		color:#fff;
+		font-weight:bold;
+		line-height:px2rem(44px);
+		margin-bottom:px2rem(16px);
+		span{
+			position:absolute;
+			right:px2rem(5px);
+			top:0;
+			font-size:14px;
+			font-weight:100;
+		}
+	}
+	#input{
+		position:relative;
+		.tel{
+			width:100%;
+			height:px2rem(44px);
+			border:0;
+			border-bottom:1px solid #f5f5f5;
+			text-indent:px2rem(16px);
+			color:#d5d5d5;
+		}
+		.vC{
+			width:100%;
+			height:px2rem(44px);
+			border:0;
+			border-bottom:1px solid #f5f5f5;
+			text-indent:px2rem(16px);
+			color:#d5d5d5;
+		}
+		
+	}
+	button{
+		height:px2rem(45px);
+		width:px2rem(345px);
+		background-color:#00d762;
+		font-size:16px;
+		line-height:px2rem(45px);
+		text-align:center;
+		color:#fff;
+		border:0;
+		margin-left:px2rem(16px);
+		border-radius:px2rem(5px);
+	}
+	.aboutUs{
+		font-size:12px;
+		color:#999;
+		margin:px2rem(24px) auto;
+		text-decoration:none;
+		display:block;
+		text-align:center;
+	}
+	#prompt{
+		font-size:12px;
+		color:white;
+		background-color:#626262;
+		border-radius:5px;
+		line-height:18px;
+		padding:5px 10px;
+		text-align:center;
+		position:absolute;
+		bottom:px2rem(110px);
+		left:px2rem(95px);
+	}
+	.idefault{
+		display:none;
+	}
+	.unNull{
+		display:block;
+		height:18px;
+		width:50%;
+	}
+	.pwNull{
+		display:block;
+		height:18px;
+		width:50%;
+	}
+	.wrong{
+		display:block;
+		width:px2rem(185px);
+		height:36px;
+	}
+}

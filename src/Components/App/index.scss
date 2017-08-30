@@ -1,0 +1,39 @@
+$ui-width: 750px;
+@function px2rem($px) {
+    @return $px/$ui-width*7.5rem;
+}
+html{
+	font-size:100px!important;
+}
+a{
+	text-decoration:none;
+	color:black;
+}
+#app{
+	font-size:px2rem(16px);
+
+	.fixed-wly{
+		margin-top:40px;
+		position: fixed;
+		left:0;
+		bottom: 0;
+		height: px2rem(52px);
+		line-height: px2rem(52px);
+		width: 100%;
+		background: #fff;
+		border-top:1px solid #ccc;
+		text-align: center;
+	}
+	.left-wly{
+		list-style: none;
+		height: px2rem(52px);
+		line-height: px2rem(52px);
+		li{
+			float: left;
+			width:25%;
+		}
+	}
+	.myselected{
+		color:#0af;
+	}
+}

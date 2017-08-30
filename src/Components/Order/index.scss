@@ -1,0 +1,75 @@
+$ui-width: 750px;
+@function px2rem($px) {
+    @return $px/$ui-width*7.5rem;
+}
+.clear{
+	clear:both;
+	line-height:0;
+	height:0;
+}
+#pjy_order{
+	header{
+		width: 100%;
+		background: #029cfe;
+		height: px2rem(40px);
+		line-height: px2rem(40px);
+		font-size:px2rem(19px);
+		text-align: center;
+		color: white;
+		span{
+			display: inline-block;
+			position: absolute;
+			left: 0px;
+		}
+	}
+	#pjy_orders{
+		ul{
+			background:#f5f5f5;
+			height: 100%;
+			overflow: scroll;
+			li{
+				position:relative;
+				padding:px2rem(10px);
+				margin-top:px2rem(10px);
+				background:#fff;
+				.orders_left{
+					width: px2rem(40px);
+					float: left;
+				}
+				.orders_right{
+					width: px2rem(300px);
+					margin-left: px2rem(10px);
+					font-size: px2rem(14px);
+					float: left;
+					.orders_data{
+						color:#ccc;
+					}
+					.orders_time{
+						color: #ccc;
+					}
+					.orders_state{
+						position:absolute;
+						right: px2rem(20px);
+						top:px2rem(20px);
+						float: right;
+					}
+					.orders_menu{
+						margin-top: px2rem(10px);
+						padding:px2rem(5px);
+						border-top:1px #ccc solid;
+						p{
+							max-width:px2rem(170px);
+							white-space:nowrap; 
+							overflow:hidden; 
+							text-overflow:ellipsis;
+						}
+						b{
+							float: right;
+							margin-top: px2rem(-18px);
+						}
+					}
+				}
+			}
+		}
+	}
+}

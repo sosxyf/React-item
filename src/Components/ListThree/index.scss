@@ -1,0 +1,83 @@
+$ui-width: 750px;
+@function px2rem($px) {
+    @return $px/$ui-width*1.2rem;
+}
+*{
+	padding:0px;
+	margin:0px;
+}
+body,html {
+	height: 100%;
+	width: 100%;
+}
+ul,li {
+	list-style: none;
+}
+
+
+#listone{
+	background: white;
+	color: #333;
+	height: px2rem(2000px);
+	.listone-top {
+		width: 90%;
+		margin: px2rem(100px) px2rem(100px);
+		height: px2rem(500px);
+		.send {
+			border: 1px solid #ccc;
+			margin-top: px2rem(50px);
+			padding: px2rem(100px) px2rem(200px);
+			display: inline-block;
+			border-radius: px2rem(20px);
+		}
+	}
+	.listone-center {
+		width: 90%;
+		margin: px2rem(100px) px2rem(100px);
+		height: px2rem(700px);
+		.nature {
+			width: 90%;
+			.nature-li {
+				float: left;
+				width: 25%;
+				display: inline-block;
+				border: 1px solid #ccc;
+				padding: px2rem(50px) px2rem(50px);
+				margin: px2rem(30px) 0;
+				margin-left: px2rem(30px);
+				border-radius: px2rem(20px);
+				.nature-char {
+					display: inline-block;
+					border: 1px solid #ccc;
+					padding: px2rem(10px) px2rem(10px);
+					border-radius: px2rem(20px);
+					margin-right: px2rem(30px);
+				}
+			}
+		}
+	}
+
+	.listone-bottom {
+		width: 100%;
+		height: px2rem(800px);
+		background: #fafafa;
+		height: px2rem(400px);
+		.empty,.ensure {
+			display: inline-block;
+			padding: px2rem(100px) px2rem(400px);
+			margin-top: px2rem(50px);
+			border-radius: px2rem(20px);
+			font-size: 16px;
+		}
+		.empty {
+			margin: 0 px2rem(120px);	
+			background: white;
+			border: 1px solid #ccc;
+		}
+		.ensure {
+			background: #56d176;
+			color: white;
+			border: 1px solid #56d176;
+		}
+	}
+}

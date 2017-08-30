@@ -1,0 +1,164 @@
+$ui-width: 750px;
+@function px2rem($px) {
+    @return $px/$ui-width*7.5rem;
+}
+*{
+	padding:0px;
+	margin:0px;
+}
+ul{
+	list-style:none;
+}
+#pjy_find{
+	header{
+		width: 100%;
+		background: #029cfe;
+		height: px2rem(40px);
+		line-height: px2rem(40px);
+		font-size:px2rem(19px);
+		text-align: center;
+		color: white;
+		span{
+			display: inline-block;
+			position: absolute;
+			left: 0px;
+		}
+	}
+	.pjy_top{
+		height: px2rem(224px);
+		border-bottom:1px solid #ccc;
+		.pjy_left{
+			display: inline-block;
+			width: 50%;
+			box-sizing:border-box;
+			border-right:1px solid #ccc;
+			padding:px2rem(24px);
+			span{
+				font-size: px2rem(21px);
+				color:#f7b424;
+				font-weight: bold;
+			}
+			p{
+				margin-top: px2rem(16px);
+				margin-bottom: px2rem(16px);
+				color: #999;
+				font-size: px2rem(14px);
+			}
+			img{
+				width: px2rem(96px);
+			}
+		}
+		.pjy_right{
+			height: 100%;
+			float: right;
+			width: 50%;
+			.pjy_right_top{
+				position:relative;
+				border-bottom:1px solid #ccc;
+				box-sizing:border-box;
+				height: calc(50% - 32px);
+				margin-top: px2rem(32px);
+				padding:px2rem(8px);
+				span{
+					font-size: px2rem(21px);
+					color:#f72491;
+					font-weight: bold;
+				}
+				p{
+					margin-top: px2rem(16px);
+					margin-bottom: px2rem(16px);
+					color: #999;
+					font-size: px2rem(14px);
+				}
+			}
+			.pjy_right_bottom{
+				margin-top: px2rem(32px);
+				box-sizing:border-box;
+				height: calc(50% - 2rem);
+				position:relative;
+				padding:px2rem(8px);
+				span{
+					font-size: px2rem(21px);
+					color:#24d2f7;
+					font-weight: bold;
+				}
+				p{
+					margin-top: px2rem(16px);
+					margin-bottom: px2rem(16px);
+					color: #999;
+					font-size: px2rem(14px);
+				}
+			}
+			img{
+				position:absolute;
+				top:0;
+				right: px2rem(8px);
+				width: px2rem(48px);
+			}
+		}
+	}
+	#pjy_ban{
+		width: 100%;
+		padding-top:px2rem(8px);
+		padding-bottom:px2rem(8px);
+		background:#ccc;
+	}
+	.pjy_time{
+		text-align: center;
+		.pjy_time_top{
+			h1{
+				display: inline-block;
+				font-size: px2rem(24px);
+			}
+		}
+		h2{
+			font-size: px2rem(12px);
+			color:#999;
+		}
+		ul{
+			margin-top: px2rem(16px);
+			li{
+				float: left;
+				width: 33.3%;
+				position:relative;
+				box-sizing:border-box;
+				h3{
+					position:absolute;
+					top:0;
+					left: px2rem(8px);
+					background:black;
+					color: #fff;
+					font-size:px2rem(12px);
+					height: px2rem(19px);
+					font-weight: normal;
+					width: px2rem(64px);
+					line-height: px2rem(19px);
+				}
+				p{
+					color: #999;
+					overflow: hidden;
+					text-overflow:ellipsis;
+					white-space: nowrap;
+				}
+				span{
+					color: red;
+					font-size: px2rem(14px);
+				}
+				b{
+					color: #999;
+					font-size: px2rem(14px);
+					text-decoration:line-through;
+				}
+				img{
+					width: 100%
+				}
+			}
+		}
+		.clear{
+			clear: both;
+		}
+		.more{
+			margin-top: px2rem(19px);
+		}
+	}
+}

@@ -1,0 +1,132 @@
+$ui-width: 750px;
+@function px2rem($px) {
+    @return $px/$ui-width*7.5rem;
+}
+::-webkit-scrollbar {
+            width: 0px;
+        }
+
+#bard_footer{
+	height:px2rem(980px);
+	background:#ccc;
+}
+#assess{
+	width:100%;
+	height:px2rem(100px);
+	position: relative;
+	top:px2rem(190px);
+	background:#fff;
+	.assess_bard_first{
+		float:left;
+		text-align: center;
+		padding:px2rem(10px);
+		border-right:1px solid #ccc;
+		.Hbard_head{
+			color:#f60;
+		}
+		.bard_compare{
+			font-size:8px;
+			color:#ccc;
+		}
+	}
+	.assess_bard_second{
+		float:left;
+		padding:px2rem(10px);
+		.bardTitle{
+			font-size:14px;
+		}
+		.bardStar1{
+			margin-left:10px;
+			color:#f60;
+		}
+		.bardGrade1{
+			margin-left:10px;
+			color:#f60;	
+		}
+		.bardStar2{
+			margin-left:10px;
+			color:#f60;
+		}
+		.bardGrade2{
+			margin-left:10px;
+			color:#f60;	
+		}
+		.bardTime{
+			margin-left:10px;
+			color:#ccc;	
+			font-size:10px;	
+		}
+	}
+}
+
+
+.bard_tab{
+	width:100%;
+	min-height:px2rem(100px);
+	position: relative;
+	top:px2rem(200px);
+	background:#fff;
+	.bardChing{
+		display: inline-block;
+    	padding:px2rem(3px);
+	    margin: px2rem(8px) px2rem(2px);
+	    border-radius: px2rem(2px);
+	    color: #6d7885;
+    	background-color: #ebf5ff;
+    	float:left;
+    	font-size:14px;
+	}
+	.bardBlue{
+		color: #fff;
+    	background-color: #3190e8;
+	}
+}
+
+
+
+.bard_appraise{
+	width:100%;
+	height:100%;
+	position: relative;
+	top:px2rem(200px);
+	background:#fff;
+	.testimonials{
+		    padding: px2rem(6px) 0;
+    		border-bottom: 1px solid #ddd;
+		.headPortrait{
+			    position: relative;
+    			top: 0;
+    			left: 0;
+			    width: px2rem(30px);
+			    height: px2rem(30px);
+			    border-radius: 50%;
+		}		
+	}
+	.appraiseContent{
+		margin-left:px2rem(40px);
+		.appraiseTime{
+			    position: absolute;
+			    top:px2rem(4px);
+			    right: px2rem(2px);
+			    font-size: px2rem(5px);
+			    color: #999;
+		}
+		.appraiseKind{
+			li{
+			    display: inline-block;
+			    font-size: px2rem(2px);
+			    color: #999;
+			    border: 1px solid #ddd;
+			    padding: px2rem(2px) px2rem(5px);
+			    margin: px2rem(2px);
+			    border-radius: px2rem(2px);
+			    max-width: px2rem(40px);
+			    white-space: nowrap;
+			    overflow: hidden;
+			    text-overflow: ellipsis;
+			}
+
+		}
+	}
+
+}

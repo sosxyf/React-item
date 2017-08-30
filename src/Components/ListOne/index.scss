@@ -1,0 +1,83 @@
+$ui-width: 750px;
+@function px2rem($px) {
+    @return $px/$ui-width*1.2rem;
+}
+*{
+	padding:0px;
+	margin:0px;
+}
+body,html {
+	height: 100%;
+	width: 100%;
+}
+ul {
+	list-style: none;
+}
+
+#listone{
+	width: 100%;
+	height: px2rem(2500px);
+	background: #fafafa;
+	position: fixed;
+	top: px2rem(600px);
+
+	.classify-left {
+		float: left;
+		width: 45%;
+		height: px2rem(2500px);
+		background: #fafafa;
+		overflow: scroll;
+		.classify-left-li {
+			height: px2rem(290px);
+			line-height: px2rem(290px);
+			
+			
+			.all-store {
+				float: left;
+				margin-left: px2rem(100px);
+			}
+			.num {
+				float: right;
+				margin-right: px2rem(100px);
+				height: px2rem(290px);
+			}
+
+			
+		}
+		.classify-left-click {
+			background: white;
+			height: px2rem(290px);
+			line-height: px2rem(290px);
+			.all-store {
+				float: left;
+				margin-left: px2rem(100px);
+			}
+			.num {
+				float: right;
+				margin-right: px2rem(100px);
+				height: px2rem(290px);
+			}
+		}
+
+		
+	}
+
+	.classify-right {
+			float: left;
+			position:absolute;
+			width: 55%;
+			height: px2rem(2500px);
+			left: 45%;
+			top:0;
+			background: white;
+			overflow: scroll;
+	}
+
+
+}
+.active-color {
+	color: #3190e8;
+}
+
+
+			

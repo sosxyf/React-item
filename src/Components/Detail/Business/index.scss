@@ -1,0 +1,65 @@
+    $ui-width: 750px;
+@function px2rem($px) {
+    @return $px/$ui-width*7.5rem;
+}
+    .bardMove{
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            overflow: auto;
+            z-index: 100;
+            background-color: #fff;
+            .bardMove_back{
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    text-align: center;
+                    background-color: #2196f3;
+                    color: #fff;
+                    height:px2rem(50px);
+                    line-height: px2rem(50px);;
+                    z-index: 999;
+                    .bardBack_fiont{
+                        float:left;
+                        margin-left:10px;
+                        font-size:30px;
+                    }
+
+            }
+                    .bardMove_list{
+                            padding-top:px2rem(50px);
+                            height: 100%;
+                            box-sizing: border-box;
+                            overflow: auto;
+                    }
+                    .shop_info{
+                            padding-top: px2rem(26px);
+                            background-color: #eee;
+                            font-size: px2rem(2px);
+                            overflow-y: auto;
+                    }
+                    .bardSection{
+                            margin-bottom: .266667rem;
+                            padding: 0 px2rem(40px) px2rem(40px);
+                            font-size: px2rem(2px);
+                            background-color: #fff;
+                            color: #666;
+                    }
+                    .bardSection_title{
+                        margin: 0 -px2rem(40px);
+                        padding: px2rem(20px) px2rem(40px);
+                        border-bottom: 1px solid #eee;
+                        color: #333;
+                        font-weight: 400;
+                        font-size: px2rem(40px);
+                        line-height: px2rem(60px);
+                    }
+                    .bardSection_list{
+                        p{
+                            margin: px2rem(10px) 0;
+                        }
+                    }
+    }

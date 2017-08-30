@@ -1,0 +1,41 @@
+$ui-width: 750px;
+@function px2rem($px) {
+    @return $px/$ui-width*1.2rem;
+}
+*{
+	padding:0px;
+	margin:0px;
+}
+body,html {
+	height: 100%;
+	width: 100%;
+}
+ul,li {
+	list-style: none;
+}
+
+#listone{
+	background: white;
+	color: #333;
+	height: px2rem(1800px);
+	.sort {
+		width: 100%;
+		height: px2rem(290px);
+		line-height: px2rem(290px);
+		.ic {
+			display: inline-block;
+			height: px2rem(120px);
+			width: px2rem(120px);
+			background: #fafafa;
+			margin-top: px2rem(100px);
+			margin-left: px2rem(100px);
+		}
+		.char {
+			position: absolute;
+			display: inline-block;
+			width: 85%;
+			border-bottom: 1px solid #ccc;
+			margin-left: px2rem(100px);
+		}
+	}
+}

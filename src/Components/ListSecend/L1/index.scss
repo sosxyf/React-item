@@ -1,0 +1,38 @@
+$ui-width: 750px;
+@function px2rem($px) {
+    @return $px/$ui-width*1.2rem;
+}
+*{
+	padding:0px;
+	margin:0px;
+}
+body,html {
+	height: 100%;
+	width: 100%;
+}
+ul {
+	list-style: none;
+}
+
+
+
+.classify-right-li {
+	height: px2rem(290px);
+	line-height: px2rem(290px);
+	.classify-img {
+		width: px2rem(150px);
+		height: px2rem(150px);
+		float: left;
+		margin: px2rem(50px);
+	}
+	.classify-all {
+		line-height: px2rem(290px);
+		float: left;
+	}
+	.classify-num {
+		float: right;
+		margin-right: px2rem(100px);
+
+	}
+}
+
